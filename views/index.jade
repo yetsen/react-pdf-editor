@@ -1,0 +1,32 @@
+extends ./layout
+
+block body
+
+  header
+    div this is header
+    nav this is navbar
+
+  div#content
+
+
+    div#md-container
+      ul.nav.nav-tabs
+        li.nav.active
+          a(href="#md-input" data-toggle="tab") Direct Input
+        li.nav
+          a(href="#md-upload" data-toggle="tab") Upload
+        li.nav
+          a(href="#md-url-input" data-toggle="tab") URL
+
+      div.tab-content
+        div#md-input.tab-pane.fade.in.active
+
+        div#md-upload.tab-pane.fade.in Hot
+        div#md-url-input.tab-pane.fade.in image
+
+    div#content-right
+
+  footer
+    div this is footer
+
+

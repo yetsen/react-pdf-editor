@@ -1,0 +1,26 @@
+doctype html
+html
+  head
+    title= title
+
+    // Viewport mobile tag for sensible mobile support
+    meta(name="viewport",content="width=device-width, initial-scale=1, maximum-scale=1")
+
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css")
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/3.3.6/paper/bootstrap.min.css")
+
+    block styles
+
+  body
+    block body
+
+    script(src="https://code.jquery.com/jquery-2.2.0.min.js")
+    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js")
+    //script(src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js")
+
+    // The linker searches for this tag and adds js.  If there's no linker, we point to sails.io.js
+    // SCRIPTS
+    // SCRIPTS END
+
+    script(type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.22/require.js")
+    script(type="text/javascript" src="/js/app.js")
